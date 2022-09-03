@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    transition: .3s;
+    scroll-behavior: smooth;
+}
+body{
+    max-width: 1600px;
+    margin: auto;
+}
+h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 80px;
+    color: black;
+}
+h2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    color: black;
+}
+h3{
+    font-weight: 600;
+    font-size: 30px;
+    color: #263238;
+    margin: 0;
+}
+p{
+    font-style: normal;
+    font-weight: 400;
+    color: #8F95A5;
+}
+a{
+    text-decoration: none;
+    color: #8F95A5;
+}
+a:hover{
+    color: #263238;
+}
+
+
+/* HEADER */
+
+header{
+    width: 1340px;
+    margin: auto;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 55px 0;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.nav li{
+    margin-right: 50px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+.nav ul a{
+    color: #263238;
+}
+.nav ul a:hover{
+    color: #939393;
+}
+
+.header__logo{
+    width: 105px;
+}
+.header__btn{
+    width: 220px;
+    height: 70px;
+    border: 2px solid #263238;
+    border-radius: 5px;
+    background: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+.header__btn:hover{
+    background: #263238;
+    color: white;
+}
+
+/* MAIN */
+
+main{
+    width: 1340px;
+    margin: auto;
+}
+
+/* Section 0 */
+
+.section-0{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 160px;
+}
+.section-0__box{
+    width: 550px;
+    position: relative;
+}
+.section-0 p{
+    font-size: 24px;
+    line-height: 36px;
+    padding: 30px 0;
+}
+.section-0__btn{
+    width: 440px;
+    height: 120px;
+    background: #263238;
+    border-radius: 15px;
+    color: white;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    cursor: pointer;
+}
+.section-0__btn:hover{
+    background: white;
+    color: #263238;
+}
+.light{
+    position: absolute;
+    left: 420px;
+    top: 140px;
+}
+
+
+/* SKILLS */
+
+.skills h2{
+    text-align: center;
+    margin: 100px 0;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+    /* justify-items: stretch;
+    align-items: stretch; */
+}
+.skills-grid > div:nth-of-type(1){
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+}
+.skills-grid > div:nth-of-type(2){
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+}
+.skills-grid > div:nth-of-type(3){
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+}
+.skills-grid > div:nth-of-type(4){
+    grid-column: 2 / 4;
+    grid-row: 4 / 6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slills-content{
+    background: #F5F5F5;
+    border-radius: 10px;    
+    padding: 40px;
+    
+}
+.slills-content p{
+    width: 350px;
+}
+
+.slills-content img{
+    margin: 35px 0;
+    text-align: center;
+}
+
+.slills-content p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+.skills__btn{
+    width: 230px;
+    height: 60px;
+    background: #263238;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+.skills__btn:hover{
+    background: white;
+    color: #263238;
+}
+
+
+/* ABOUT */
+
+.about{
+    margin: 250px 0;
+}
+.about p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.about__box{
+    width: 630px;
+}
+.about__box__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.about__box__bottom h2{
+    line-height: 0;
+}
+
+
+/* PRICING */
+
+.pricing{
+    box-sizing: border-box;
+    margin: auto;
+    margin-bottom: 200px;
+}
+.pricing h2{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.pricing__tbl{
+    width: 1340px;
+}
+.pricing__tbl td{
+    width: 420px;
+}
+.line-1{
+    text-align: center;
+    vertical-align: center;
+}
+.line-3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8F95A5;
+    vertical-align: top
+}
+.col_2{
+    padding-left: 20px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    width: 240px;
+    height: 45px;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #546269;
+    background: #EEEEEE;
+    border-radius: 5px;
+}
+.price span{
+    font-weight: 400;
+    font-size: 30px;
+    color: #263238;
+    padding-right: 10px;
+}
+
+/* CONTACT US */
+
+.contact{
+    margin: 100px 0;
+}
+.contact h2{
+    margin: 0 0 60px 0;
+}
+.contact__box{
+    width: 780px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8F95A5;
+}
+
+#email{
+    width: 450px;
+    height: 80px;
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid #8F95A5;
+    border-radius: 10px;
+    padding-left: 30px;
+    Outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #8F95A5;
+}
+#email:focus{
+    box-shadow: 0 0 0 3px #EEEEEE;
+}
+
+#contact__btn{
+    width: 270px;
+    height: 80px;
+    background: #263238;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.contact__btn:hover{
+    background: white;
+    color: #263238;
+}
+
+/* FOOTER */
+
+footer{
+    width: 1340px;
+    height: 150px;
+    margin: auto;    
+}
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 24px;
+    color: #8F95A5;
+}
+.footer__container li{
+    margin-left: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+.footer__container ul a:hover{
+    color: #263238;
+}
