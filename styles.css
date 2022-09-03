@@ -324,7 +324,7 @@ main{
     margin-left: 10px;
     cursor: pointer;
 }
-.contact__btn:hover{
+#contact__btn:hover{
     background: white;
     color: #263238;
 }
